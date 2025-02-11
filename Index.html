@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nazim Uddin | Video Editor</title>
+  <!-- Add modern fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Add GSAP for smooth animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <!-- Particle background -->
+  <div id="particles-js"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="#home"><img src="/Photo/Nazim_Uddin_Logo.png" alt="Nazim Uddin Logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="header" id="home">
+    <div class="header-content">
+      <div class="header-text">
+        <h1>NAZIM UDDIN</h1>
+        <h1 class="profession">Video Editor | Content Creator</h1>
+        <div class="cta-container">
+          <a href="https://www.fiverr.com/im_nazim" class="cta-button" target="_blank">Hire Me On Fiverr</a>
+          <div class="header-social-icons">
+            <a href="https://facebook.com/imnazimu" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/imnazimu" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/imnazimu" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-image">
+        <img src="/Photo/Nazim_Uddin.png" alt="Nazim Uddin">
+      </div>
+    </div>
+  </header>
+
+  <!-- Move overlay div outside of portfolio section -->
+  <div class="page-overlay"></div>
+
+  <!-- Projects Section -->
+  <section class="portfolio" id="projects">
+    <div class="container">
+      <div class="section-title">
+        <h2>My Projects</h2>
+        <p>Check out my recent work</p>
+      </div>
+      <div class="portfolio-grid">
+        <!-- Talking Head Folder -->
+        <div class="folder-container" id="talkingHead">
+          <div class="folder">
+            <h3>Talking Head</h3>
+          </div>
+          <div class="folder-content">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voice Over Folder -->
+        <div class="folder-container" id="voiceOver">
+          <div class="folder">
+            <h3>Voice Over</h3>
+          </div>
+          <div class="folder-content">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shorts Folder -->
+        <div class="folder-container" id="shorts">
+          <div class="folder">
+            <h3>Shorts</h3>
+          </div>
+          <div class="folder-content">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+            </div>
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="/Photo/Nazim_Uddin_2.png" alt="Nazim Uddin">
+        </div>
+        <div class="about-text">
+          <h2>Hi, I'm Nazim Uddin</h2>
+          <p>A freelance video editor specializing in YouTube content, motion graphics, and b-roll animations. I'm working on starting my own video editing agency while also exploring the travel business. Besides editing, I'm also a content creator and offer my services on Fiverr.</p>
+          
+          <div class="about-contact">
+            <a href="mailto:collab@nazimuddin.net" class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <span>collab@nazimuddin.net</span>
+            </a>
+            <a href="tel:+8801864444227" class="contact-info-item">
+              <i class="fas fa-phone"></i>
+              <span>+88 01864444227</span>
+            </a>
+          </div>
+
+          <div class="about-social-container">
+            <div class="cta-container">
+              <a href="https://www.fiverr.com/im_nazim" class="cta-button" target="_blank">Hire Me On Fiverr</a>
+              <div class="header-social-icons">
+                <a href="https://facebook.com/imnazimu" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/imnazimu" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://x.com/imnazimu" target="_blank"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>My Services</h2>
+        <p>Professional video editing solutions</p>
+      </div>
+      <div class="portfolio-grid">
+        <!-- Video Editing -->
+        <div class="service-card">
+          <div class="service-card-inner">
+            <div class="service-card-front">
+              <i class="fas fa-video service-icon"></i>
+              <h3>Video Editing</h3>
+            </div>
+            <div class="service-card-back">
+              <h4>Skills</h4>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <span>Advanced Cuts & Transitions</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Motion Graphics & Titles</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>YouTube & Social Media Editing</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Effects -->
+        <div class="service-card">
+          <div class="service-card-inner">
+            <div class="service-card-front">
+              <i class="fas fa-magic service-icon"></i>
+              <h3>Visual Effects</h3>
+            </div>
+            <div class="service-card-back">
+              <h4>Skills</h4>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <span>Green Screen Compositing</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Tracking & Rotoscoping</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Cinematic Effects</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Audio Mixing -->
+        <div class="service-card">
+          <div class="service-card-inner">
+            <div class="service-card-front">
+              <i class="fas fa-music service-icon"></i>
+              <h3>Audio Mixing</h3>
+            </div>
+            <div class="service-card-back">
+              <h4>Skills</h4>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <span>Dialogue Enhancement</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Sound Design</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Music & Voice Synchronization</span>
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (temporary video slider) -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-title">
+      <h2>Client Testimonials</h2>
+      <p>What my clients say about my work</p>
+    </div>
+    <div class="video-slider-container">
+      <div class="video-slider">
+        <!-- Video 1 -->
+        <div class="slider-video">
+          <iframe 
+            src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <!-- Repeat for 5 more videos -->
+        <div class="slider-video">
+          <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+        </div>
+        <div class="slider-video">
+          <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+        </div>
+        <div class="slider-video">
+          <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+        </div>
+        <div class="slider-video">
+          <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+        </div>
+        <div class="slider-video">
+          <iframe src="https://www.youtube.com/embed/kcwLxpyRDbU?si=Qv-JfDq_3ghvZVnz&mute=1"></iframe>
+        </div>
+      </div>
+      <div class="slider-indicators">
+        <div class="slider-dot active"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Get In Touch</h2>
+        <p>Let's create something amazing together</p>
+      </div>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <a href="mailto:collab@nazimuddin.net" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <p>collab@nazimuddin.net</p>
+          </a>
+          <a href="tel:+8801864444227" class="contact-link">
+            <i class="fas fa-phone"></i>
+            <p>+88 01864444227</p>
+          </a>
+          <div class="contact-social">
+            <h3>Connect With Me</h3>
+            <div class="header-social-icons">
+              <a href="https://www.fiverr.com/im_nazim" class="hire-btn" target="_blank">
+                <i class="fab fa-fiverr"></i>
+                <span>Hire Me</span>
+              </a>
+              <a href="https://facebook.com/imnazimu" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com/imnazimu" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://x.com/imnazimu" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" onsubmit="return sendEmail(event)">
+          <div class="form-group">
+            <input type="text" id="name" required placeholder="Your Name">
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="email" required placeholder="Your Email">
+          </div>
+
+          <div class="form-group message-group">
+            <textarea id="message" required placeholder="Your Message"></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <span>Submit Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer at the bottom -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">© 2025 Nazim Uddin. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
